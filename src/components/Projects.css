@@ -1,0 +1,213 @@
+.projects {
+  background: linear-gradient(135deg, #e8ecef 0%, #f5f7fa 100%);
+  padding: 80px 0;
+  width: 100%;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+/* Full Width Grid */
+.projects-full-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Individual Project Story Card */
+.project-story-card {
+  position: relative;
+  aspect-ratio: 4/5;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 48, 73, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.project-story-card:hover {
+  box-shadow: 0 20px 60px rgba(0, 48, 73, 0.2);
+}
+
+/* Background Animation Layer for Each Card */
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-story-card.hovered .card-background {
+  opacity: 0.25;
+}
+
+.project-story-card.animating .card-background {
+  opacity: 0.35;
+}
+
+.card-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(30px) brightness(1.2);
+  transform: scale(1);
+  transition: transform 4s ease-in-out;
+}
+
+.project-story-card.animating .card-background img {
+  transform: scale(1.2);
+  animation: cardBackgroundPan 4s ease-in-out infinite alternate;
+}
+
+@keyframes cardBackgroundPan {
+  0% {
+    transform: scale(1.2) translateX(-8px) translateY(-5px);
+  }
+  50% {
+    transform: scale(1.25) translateX(0) translateY(5px);
+  }
+  100% {
+    transform: scale(1.2) translateX(8px) translateY(-5px);
+  }
+}
+
+/* Card Content */
+.card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-story-card.hovered .card-image-wrapper {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-story-card.animating .card-image-wrapper {
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(0, 48, 73, 0.25);
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.6s ease;
+}
+
+.project-story-card.hovered .card-image-wrapper img {
+  transform: scale(1.03);
+}
+
+.project-story-card.animating .card-image-wrapper img {
+  transform: scale(1.08);
+}
+
+/* CTA Button */
+.projects-cta {
+  text-align: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.projects-cta .btn {
+  padding: 16px 50px;
+  font-size: 1.1rem;
+  background: var(--primary-yellow);
+  color: var(--primary-navy);
+  border: 2px solid var(--primary-yellow);
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 198, 0, 0.3);
+}
+
+.projects-cta .btn:hover {
+  background: var(--primary-navy);
+  color: var(--white);
+  border-color: var(--primary-navy);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 48, 73, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .projects-full-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects-full-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 0;
+  }
+
+  .projects-full-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .project-story-card {
+    aspect-ratio: 3/4;
+  }
+
+  .projects-cta .btn {
+    width: 90%;
+    max-width: 350px;
+    padding: 14px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-header {
+    margin-bottom: 40px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-image-wrapper {
+    padding: 12px;
+  }
+}
