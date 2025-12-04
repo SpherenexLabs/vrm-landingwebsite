@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-image">
           <img 
-            src={process.env.PUBLIC_URL + '/assets/building-construction.jpg'} 
+            src={process.env.PUBLIC_URL + '/assets/p12.jpeg'} 
             alt="VRM Groups Construction" 
           />
           <div className="about-badge">
