@@ -17,6 +17,10 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleAdminLogin = () => {
+    window.open('https://construction-five-weld.vercel.app/', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
@@ -36,7 +40,11 @@ const Navbar = () => {
           <li><a href="#services" onClick={() => setIsMobileMenuOpen(false)}>Services</a></li>
           <li><a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</a></li>
           <li><a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a></li>
-          <li><a href="http://localhost:3000" className="btn-nav-cta">Get Quote</a></li>
+          <li>
+            <button className="btn-admin-login" onClick={handleAdminLogin}>
+              Admin Login
+            </button>
+          </li>
         </ul>
       </div>
     </nav>

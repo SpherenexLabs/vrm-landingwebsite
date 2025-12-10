@@ -4,8 +4,11 @@ import SplashScreen from './components/SplashScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import VideoShowcase from './components/VideoShowcase';
 import Services from './components/Services';
 import Projects from './components/Projects';
+import Awards from './components/Awards';
+import Recognition from './components/Recognition';
 import WhyChooseUs from './components/WhyChooseUs';
 import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
@@ -26,8 +29,11 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <VideoShowcase />
       <Services />
       <Projects />
+      <Awards />
+      <Recognition />
       <WhyChooseUs />
       <ContactCTA />
       <Footer />

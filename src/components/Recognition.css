@@ -1,0 +1,177 @@
+.recognition {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 80px 0;
+  width: 100%;
+}
+
+.recognition-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.recognition-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+}
+
+.recognition-header .highlight {
+  color: #d4af37;
+}
+
+.recognition-header .section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.recognition-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 48, 73, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+.recognition-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 48, 73, 0.2);
+  border-color: #d4af37;
+}
+
+.document-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #003049 0%, #005f8a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.document-icon span {
+  font-size: 2.5rem;
+}
+
+.document-info {
+  margin-bottom: 30px;
+}
+
+.document-info h3 {
+  font-size: 1.5rem;
+  color: var(--primary-navy);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.document-info p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.document-actions {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.btn-view,
+.btn-download {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-view {
+  background: linear-gradient(135deg, #003049 0%, #005f8a 100%);
+  color: white;
+}
+
+.btn-view:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 48, 73, 0.3);
+}
+
+.btn-download {
+  background: #fff;
+  color: #003049;
+  border: 2px solid #003049;
+}
+
+.btn-download:hover {
+  background: #003049;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recognition {
+    padding: 60px 0;
+  }
+
+  .recognition-header h2 {
+    font-size: 2rem;
+  }
+
+  .recognition-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .recognition-card {
+    padding: 30px;
+  }
+
+  .document-actions {
+    flex-direction: column;
+  }
+
+  .btn-view,
+  .btn-download {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .recognition-header {
+    margin-bottom: 40px;
+  }
+
+  .document-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .document-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .document-icon span {
+    font-size: 2rem;
+  }
+}

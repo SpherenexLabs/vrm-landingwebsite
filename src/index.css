@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'QB One';
+  src: url('./BoxTube Labs - QB One SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +19,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* VRM GROUPS Brand Styling */
+.vrm-brand {
+  font-family: 'QB One', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.vrm-brand .vrm-text {
+  color: #FFA500;
+}
+
+.vrm-brand .groups-text {
+  color: #181818;
 }
 
 code {

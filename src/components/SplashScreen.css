@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
 
 .slow-splash-content {
   text-align: center;
-  color: white;
+  color: #003049;
 }
 
 .slow-logo {
@@ -30,10 +30,13 @@
 
 .slow-title {
   font-size: 0px;
-  font-weight: bold;
+  font-weight: 900;
   margin: 0 0 16px 0;
   opacity: 0;
   transform: translateX(-50px);
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'QB One', sans-serif;
   animation: 
     slowTitleGrow 2s ease-out 2s forwards,
     slowTitleSlide 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s forwards,
@@ -45,6 +48,9 @@
   margin: 0 0 48px 0;
   opacity: 0;
   transform: translateX(50px);
+  color: #666;
+  font-weight: 500;
+  letter-spacing: 1px;
   animation: 
     slowSubtitleGrow 1.8s ease-out 3s forwards,
     slowSubtitleSlide 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s forwards,
@@ -60,10 +66,11 @@
 }
 
 .slow-dot {
-  width: 10px;
-  height: 10px;
-  background: white;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
   border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(255, 165, 0, 0.3);
   animation: slowBounce 2s infinite ease-in-out;
 }
 
@@ -74,7 +81,7 @@
 /* Logo Slow Animations */
 @keyframes slowLogoGrow {
   0% { width: 0px; }
-  100% { width: 120px; }
+  100% { width: 400px; }
 }
 
 @keyframes slowLogoFade {
@@ -94,7 +101,7 @@
 /* Text Slow Animations */
 @keyframes slowTitleGrow {
   0% { font-size: 0px; }
-  100% { font-size: 32px; }
+  100% { font-size: 48px; }
 }
 
 @keyframes slowTitleSlide {
@@ -109,7 +116,7 @@
 
 @keyframes slowSubtitleGrow {
   0% { font-size: 0px; }
-  100% { font-size: 18px; }
+  100% { font-size: 20px; }
 }
 
 @keyframes slowSubtitleSlide {

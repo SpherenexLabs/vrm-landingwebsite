@@ -80,7 +80,7 @@ const Footer = () => {
             <ul className="contact-list">
               <li>
                 <span className="icon">📍</span>
-                15th Cross, A Block No.27, Ground Floor, Bhuvaneshwari Nagar, Magadi Main Road, Bangalore - 560091
+                HABITAT GREENS,Sondekoppa Main Rd, Indiranagara, Karnataka 562123
               </li>
               <li>
                 <span className="icon">📞</span>

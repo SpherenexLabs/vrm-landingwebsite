@@ -22,7 +22,7 @@ const SplashScreen = ({ onComplete }) => {
             e.target.src = process.env.PUBLIC_URL + '/assets/vrmlogo.png';
           }}
         />
-        <h1 className="slow-title">VRM GROUPS</h1>
+        <h1 className="slow-title vrm-brand"><span className="vrm-text">VRM</span> <span className="groups-text">GROUPS</span></h1>
         <p className="slow-subtitle">Building, Construction and Infrastructure</p>
         <div className="slow-loading">
           <div className="slow-dot"></div>

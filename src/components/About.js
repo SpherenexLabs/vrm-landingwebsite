@@ -7,17 +7,13 @@ const About = () => {
       <div className="about-container">
         <div className="about-image">
           <img 
-            src={process.env.PUBLIC_URL + '/assets/p12.jpeg'} 
+            src={process.env.PUBLIC_URL + '/assets/About.jpg'} 
             alt="VRM Groups Construction" 
           />
-          <div className="about-badge">
-            <span className="badge-number">20+</span>
-            <span className="badge-text">Years Experience</span>
-          </div>
         </div>
         
         <div className="about-content">
-          <h2>About <span className="highlight">VRM Groups</span></h2>
+          <h2>About <span className="highlight vrm-brand"><span className="vrm-text">VRM</span> <span className="groups-text">Groups</span></span></h2>
           <p className="section-subtitle">
             Leading the Way in Construction Excellence
           </p>
@@ -59,9 +55,15 @@ const About = () => {
                 <p>Committed to meeting project deadlines</p>
               </div>
             </div>
+            
+            <div className="feature-item">
+              <div className="feature-icon">✓</div>
+              <div>
+                <h4>20+ Years Experience</h4>
+                <p>Two decades of excellence in construction industry</p>
+              </div>
+            </div>
           </div>
-          
-          <a href="http://localhost:3000" className="btn btn-primary">Get Quote</a>
         </div>
       </div>
     </section>

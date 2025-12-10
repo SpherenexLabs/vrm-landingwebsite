@@ -7,14 +7,17 @@
   padding: 15px 0;
   z-index: 1000;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 20px rgba(0, 48, 73, 0.1);
+  box-shadow: 0 2px 20px rgba(255, 165, 0, 0.3), 0 4px 30px rgba(255, 165, 0, 0.15);
   backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 165, 0, 0.3);
+  border-top: 3px solid rgba(255, 165, 0, 0.4);
+  border-bottom: 3px solid rgba(255, 165, 0, 0.4);
 }
 
 .navbar.scrolled {
   background: rgba(255, 255, 255, 1);
   padding: 12px 0;
-  box-shadow: 0 4px 30px rgba(0, 48, 73, 0.15);
+  box-shadow: 0 4px 30px rgba(255, 165, 0, 0.25), 0 6px 40px rgba(255, 165, 0, 0.1);
 }
 
 .navbar-container {
@@ -90,6 +93,27 @@
 
 .btn-nav-cta::after {
   display: none;
+}
+
+.btn-admin-login {
+  background-color: var(--primary-navy);
+  color: var(--primary-yellow);
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--primary-navy);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 48, 73, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-admin-login:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-navy);
+  border-color: var(--primary-yellow);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 198, 0, 0.4);
 }
 
 .mobile-menu-toggle {

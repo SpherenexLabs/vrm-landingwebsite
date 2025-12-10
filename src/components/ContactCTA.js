@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactCTA.css';
+import locationQR from '../assets/location_qr_code.png';
 
 const ContactCTA = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ const ContactCTA = () => {
               <div className="contact-icon">📍</div>
               <div>
                 <h4>Visit Us</h4>
-                <p>15th Cross, A Block No.27<br/>Ground Floor, Bhuvaneshwari Nagar<br/>Magadi Main Road, Bangalore - 560091</p>
+                <p>HABITAT GREENS,Sondekoppa Main Rd, <br/>Indiranagara, Karnataka 562123</p>
               </div>
             </div>
             
@@ -63,6 +64,13 @@ const ContactCTA = () => {
               <div>
                 <h4>Working Hours</h4>
                 <p>Mon - Sat: 9:00 AM - 6:00 PM<br/>Sunday: Closed</p>
+              </div>
+            </div>
+            
+            <div className="contact-item qr-code-item">
+              <div>
+                <h4>Scan for Location</h4>
+                <img src={locationQR} alt="Location QR Code" className="location-qr" />
               </div>
             </div>
           </div>

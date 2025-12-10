@@ -17,8 +17,9 @@ const Hero = () => {
             <span className="brand-vrm">VRM</span>{' '}
             <span className="brand-groups">GROUPS</span>
           </h1>
+          <h2 className="hero-subtitle vendor-subtitle"><span className="vendor-word">Vendor</span> <span className="relationship-word">Relationship</span> <span className="maintenance-word">Maintenance</span></h2>
           <h2 className="hero-subtitle">Building, Construction and Infrastructure</h2>
-          <p className="hero-tagline">Sustainable Design Freedom</p>
+          {/* <p className="hero-tagline">Sustainable Design Freedom</p> */}
         </div>
       </div>
     </section>
