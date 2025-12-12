@@ -8,11 +8,19 @@ import concreteWorksImg from '../assets/concrete-works.webp';
 import infrastructureImg from '../assets/infrastructure.jpg';
 import interiorDesignImg1 from '../assets/interior-design.webp';
 import interiorDesignImg2 from '../assets/modularkitchen1.jpg';
-
+import twod3dPlanningImg from '../assets/US_Craftsman_01_3D_Floorplan-01_1920px.png';
 const Services = () => {
   const services = [
     {
       id: 1,
+      title: '2D & 3D Plan Elevation',
+      description: 'Professional architectural design and visualization services for your dream project',
+      icon: '📐',
+      image: twod3dPlanningImg,
+      items: ['2D Floor Plans', '3D Elevations', 'Interior Layouts', 'Structural Drawings', 'Site Plans']
+    },
+    {
+      id: 2,
       title: 'Building Materials',
       description: 'Premium quality cement, steel, bricks, and aggregates for all construction needs',
       icon: '🏗️',
@@ -20,7 +28,7 @@ const Services = () => {
       items: ['Cement', 'Steel', 'Bricks', 'Sand', 'Aggregates']
     },
     {
-      id: 2,
+      id: 3,
       title: 'Electrical Solutions',
       description: 'Complete electrical infrastructure including wiring, switches, and fixtures',
       icon: '⚡',
@@ -28,7 +36,7 @@ const Services = () => {
       items: ['Wiring', 'Switches', 'Lighting', 'Distribution Boards', 'Safety Equipment']
     },
     {
-      id: 3,
+      id: 4,
       title: 'Plumbing Works',
       description: 'Comprehensive plumbing solutions with quality pipes, fittings, and fixtures',
       icon: '🔧',
@@ -36,7 +44,7 @@ const Services = () => {
       items: ['Pipes', 'Fittings', 'Fixtures', 'Valves', 'Water Systems']
     },
     {
-      id: 4,
+      id: 5,
       title: 'Finishing & Interiors',
       description: 'Paint, waterproofing, windows, and complete interior finishing services',
       icon: '🎨',
@@ -44,7 +52,7 @@ const Services = () => {
       items: ['POP & Painting', 'Waterproofing', 'Windows', 'Doors', 'Flooring']
     },
     {
-      id: 5,
+      id: 6,
       title: 'Concrete Works',
       description: 'Ready-mix concrete and specialized concrete solutions for all applications',
       icon: '🏢',
@@ -52,7 +60,7 @@ const Services = () => {
       items: ['Ready-Mix', 'Precast', 'Custom Mix', 'Reinforcement', 'Formwork']
     },
     {
-      id: 6,
+      id: 7,
       title: 'Infrastructure',
       description: 'Large-scale infrastructure development and civil engineering projects',
       icon: '🌉',
@@ -60,7 +68,7 @@ const Services = () => {
       items: ['Residential', 'Commercial', 'Hospitals', 'Colleges', 'Site Development']
     },
     {
-      id: 7,
+      id: 8,
       title: 'Interior Design & Furniture (Playwood, PVC, Aluminium)',
       description: 'Custom modular furniture and interior design solutions for modern living',
       icon: '🪑',

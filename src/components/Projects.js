@@ -22,7 +22,7 @@ import p17 from '../assets/p17.jpg';
 import p18 from '../assets/p18.jpg';
 import p19 from '../assets/p19.jpg';
 import p20 from '../assets/p20.jpg';
-
+import p21 from '../assets/p21.jpg';
 const ProjectCard = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -98,6 +98,7 @@ const Projects = () => {
     { id: 18, image: p18 },
     { id: 19, image: p19 },
     { id: 20, image: p20 },
+    { id: 21, image: p21 },
   ];
 
   const displayedProjects = showAll ? projects : projects.slice(0, 8);

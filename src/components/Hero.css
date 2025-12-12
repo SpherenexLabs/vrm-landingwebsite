@@ -20,19 +20,49 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding-top: 300px;
+  padding-top: 320px;
 }
 
 .hero-logo-container {
-  width: 90%;
-  max-width: 450px;
+  width: 1300px;
+  max-width: 100%;
   animation: fadeInDown 1s ease-out;
+  position: relative;
+  cursor: pointer;
 }
 
 .hero-logo {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 450px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.mute-indicator {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 48, 73, 0.7);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+}
+
+.hero-logo-container:hover .mute-indicator {
+  background: rgba(0, 48, 73, 0.9);
+  transform: scale(1.1);
+}
+
+.mute-indicator svg {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .hero-text {
@@ -130,7 +160,11 @@
   }
 
   .hero-logo-container {
-    max-width: 350px;
+    max-width: 100%;
+  }
+
+  .hero-logo {
+    height: 350px;
   }
 
   .hero-title {
@@ -148,7 +182,11 @@
 
 @media (max-width: 480px) {
   .hero-logo-container {
-    max-width: 280px;
+    max-width: 100%;
+  }
+
+  .hero-logo {
+    height: 280px;
   }
 
   .hero-title {
